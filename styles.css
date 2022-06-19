@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #2f2019;
+  background: #f7e9dc;
+}
+.lg-c {
+  color: #a7a49d;
+}
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.card {
+  margin-top: 10vh;
+}
+
+.head {
+  background: #ec755d;
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 30px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.money {
+  font-size: 26px;
+  font-weight: bold;
+}
+.spending {
+  margin-top: 2vh;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 40vw;
+  background: #fff;
+}
+.topic {
+  font-size: 25px;
+}
+span {
+  position: relative;
+  top: 100%;
+}
+.bar {
+  border-radius: 5px;
+}
+.days {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.hr {
+  height: 2px;
+  width: 90%;
+  background: #a7a49d;
+  margin: auto;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.left {
+  text-align: left;
+}
+
+.right {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.fs-s {
+  font-size: small;
+}
+footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 2px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
