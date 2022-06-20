@@ -47,7 +47,7 @@ body {
 .topic {
   font-size: 25px;
 }
-span {
+.span {
   position: relative;
   top: 100%;
 }
@@ -86,7 +86,7 @@ span {
 footer {
   position: absolute;
   width: 100vw;
-  bottom: 2px;
+  bottom: 10px;
 }
 .attribution {
   font-size: 11px;
@@ -94,4 +94,37 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 1280px) {
+  .head {
+    width: 60vw;
+  }
+  .spending {
+    width: 60vw;
+  }
+  footer {
+    bottom: 100px;
+  }
+}
+@media only screen and (max-width: 678px) {
+  .head {
+    width: 75vw;
+  }
+  .spending {
+    width: 75vw;
+  }
+  footer {
+    bottom: 100px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .head {
+    width: 90vw;
+  }
+  .spending {
+    width: 90vw;
+  }
+  footer {
+    bottom: 100px;
+  }
 }

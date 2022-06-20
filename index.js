@@ -2,9 +2,9 @@ function main(data) {
   const weekday = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const d = new Date();
   let day = weekday[d.getDay()];
-  const maxA = (arr) => {
+  const maxA = () => {
     let max = 0;
-    arr.forEach((element) => {
+    data.forEach((element) => {
       if (element.amount > max) {
         max = element.amount;
       }
@@ -12,14 +12,16 @@ function main(data) {
     return max;
   };
 
-  const higest = maxA(data);
+  const higest = maxA();
 
   const days = document.getElementById('days').children;
+
   for (var i = 0; i < days.length; i++) {
     const calculation = (data[i].amount / higest) * 100;
+
     days[i].lastElementChild.style.background = '#ec755d';
     days[i].lastElementChild.style.height = `${calculation}px`;
-    days[i].firstChild.style.height = `${120 - calculation}px`;
+    days[i].firstElementChild.style.height = `${120 - calculation}px`;
     days[i].lastElementChild.style.width = '30px';
 
     if (data[i].day === day) {
