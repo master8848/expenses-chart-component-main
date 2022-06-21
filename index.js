@@ -22,7 +22,17 @@ function main(data) {
     // days[i].lastElementChild.style.background = '#ec755d';
     days[i].lastElementChild.style.height = `${calculation}px`;
     days[i].firstElementChild.style.marginTop = `${110 - calculation}px`;
+    days[i].firstElementChild.innerText = data[i].amount;
+    console.log(days[i].firstElementChild);
     days[i].lastElementChild.style.width = '30px';
+    days[i].lastElementChild.addEventListener('mouseover', (eve) => {
+      // days[i].lastElementChild.classList.remove('hidden');
+      eve.path[1].firstElementChild.classList.remove('hidden');
+    });
+    days[i].lastElementChild.addEventListener('mouseleave', (eve) => {
+      // days[i].lastElementChild.classList.remove('hidden');
+      console.log(eve.path[1].firstElementChild.classList.add('hidden'));
+    });
 
     // console.log(days[i].lastElementChild.classList);
     // console.log(data[i].day === day);

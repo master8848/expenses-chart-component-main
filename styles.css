@@ -55,11 +55,11 @@ body {
   /* margin: 0 0 auto 0; */
   /* padding-top: 100%; */
   margin-bottom: 0%;
-  background: #000;
+  background: hsl(25, 47%, 15%);
   border-radius: 5px;
   margin-bottom: 2px;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   font-size: 10px;
 }
 .hidden {
