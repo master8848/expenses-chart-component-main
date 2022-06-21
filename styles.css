@@ -51,8 +51,32 @@ body {
   position: relative;
   top: 100%;
 }
+.value {
+  /* margin: 0 0 auto 0; */
+  /* padding-top: 100%; */
+  margin-bottom: 0%;
+  background: #000;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+.hidden {
+  visibility: hidden;
+}
+.current {
+  background: hsl(186, 34%, 60%) !important;
+}
+.current:hover {
+  background: hsl(186, 34%, 70%) !important;
+}
 .bar {
   border-radius: 5px;
+  background: #ec755d;
+}
+.bar:hover {
+  background-color: hsl(10, 79%, 75%);
 }
 .days {
   margin-bottom: 5px;
@@ -126,5 +150,12 @@ footer {
   }
   footer {
     bottom: 100px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  footer {
+    margin-top: 20px;
+    position: static !important;
   }
 }

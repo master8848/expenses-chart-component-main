@@ -19,16 +19,19 @@ function main(data) {
   for (var i = 0; i < days.length; i++) {
     const calculation = (data[i].amount / higest) * 100;
 
-    days[i].lastElementChild.style.background = '#ec755d';
+    // days[i].lastElementChild.style.background = '#ec755d';
     days[i].lastElementChild.style.height = `${calculation}px`;
-    days[i].firstElementChild.style.height = `${120 - calculation}px`;
+    days[i].firstElementChild.style.marginTop = `${110 - calculation}px`;
     days[i].lastElementChild.style.width = '30px';
 
+    // console.log(days[i].lastElementChild.classList);
+    // console.log(data[i].day === day);
     if (data[i].day === day) {
-      days[i].lastElementChild.style.background = '#76b5bc';
+      days[i].lastElementChild.classList.add('current');
     }
   }
 }
+
 const data = [
   {
     day: 'mon',
